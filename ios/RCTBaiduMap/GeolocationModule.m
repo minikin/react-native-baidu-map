@@ -149,43 +149,43 @@ RCT_EXPORT_METHOD(reverseGeoCodeGPS:(double)lat lng:(double)lng) {
   geoCodeSearch.delegate = nil;
 }
 -(NSString *)getSearchErrorInfo:(BMKSearchErrorCode)error {
-  NSString *errormsg = @"未知";
+  NSString *errormsg = @"Unknown error";
   switch (error) {
     case BMK_SEARCH_AMBIGUOUS_KEYWORD:
-      errormsg = @"检索词有岐义";
+      errormsg = @"AMBIGUOUS KEYWORD";
       break;
     case BMK_SEARCH_AMBIGUOUS_ROURE_ADDR:
-      errormsg = @"检索地址有岐义";
+      errormsg = @"The search address is ambiguous";
       break;
     case BMK_SEARCH_NOT_SUPPORT_BUS:
-      errormsg = @"该城市不支持公交搜索";
+      errormsg = @"The search address is ambiguous";
       break;
     case BMK_SEARCH_NOT_SUPPORT_BUS_2CITY:
-      errormsg = @"不支持跨城市公交";
+      errormsg = @"Does not support cross-city bus";
       break;
     case BMK_SEARCH_RESULT_NOT_FOUND:
-      errormsg = @"没有找到检索结果";
+      errormsg = @"No search results found";
       break;
     case BMK_SEARCH_ST_EN_TOO_NEAR:
-      errormsg = @"起终点太近";
+      errormsg = @"The end is too close";
       break;
     case BMK_SEARCH_KEY_ERROR:
-      errormsg = @"key错误";
+      errormsg = @"key error";
       break;
     case BMK_SEARCH_NETWOKR_ERROR:
-      errormsg = @"网络连接错误";
+      errormsg = @"Network connection error";
       break;
     case BMK_SEARCH_NETWOKR_TIMEOUT:
-      errormsg = @"网络连接超时";
+      errormsg = @"Network connection timed out";
       break;
     case BMK_SEARCH_PERMISSION_UNFINISHED:
-      errormsg = @"还未完成鉴权，请在鉴权通过后重试";
+      errormsg = @"If the authentication has not yet been completed, please try again after authentication";
       break;
     case BMK_SEARCH_INDOOR_ID_ERROR:
-      errormsg = @"室内图ID错误";
+      errormsg = @"Indoor ID is wrong";
       break;
     case BMK_SEARCH_FLOOR_ERROR:
-      errormsg = @"室内图检索楼层错误";
+      errormsg = @"Interior map search floor error";
       break;
     default:
       break;

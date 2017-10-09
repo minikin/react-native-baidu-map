@@ -16,13 +16,9 @@
 @interface BaiduMapModule : BaseModule <BMKMapViewDelegate>
 
 -(BMKGeoCodeSearch *)getGeocodesearch;
-
 -(void)sendEvent:(NSString *)name body:(NSMutableDictionary *)body;
-
 -(NSMutableDictionary *)getEmptyBody;
-
 -(CLLocationCoordinate2D)getBaiduCoor:(double)lat lng:(double)lng;
-
 -(RCTBaiduMapView *) getBaiduMapView;
 @end
 
