@@ -19,8 +19,8 @@
 #import <BaiduMapAPI_Utils/BMKUtilsComponent.h>
 
 @interface BaseModule : NSObject <RCTBridgeModule> {
-    UINavigationController *navigationController;
-    BMKMapManager* _mapManager;
+  UINavigationController *navigationController;
+  BMKMapManager* _mapManager;
 }
 
 -(void)sendEvent:(NSString *)name body:(NSMutableDictionary *)body;

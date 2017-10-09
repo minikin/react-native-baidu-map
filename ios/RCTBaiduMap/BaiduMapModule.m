@@ -10,7 +10,7 @@
 #import "BaiduMapModule.h"
 
 @implementation BaiduMapModule {
-    BMKPointAnnotation* _annotation;
+  BMKPointAnnotation* _annotation;
 }
 
 @synthesize bridge = _bridge;
